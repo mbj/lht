@@ -23,20 +23,20 @@ AwIDAQAB\n\
 RUN echo https://mrh-state-alpinepackagesbucket-eu8bh5k00ruo.s3.dualstack.us-east-1.amazonaws.com >> /etc/apk/repositories
 
 # Install dependencies
-RUN apk add                       \
-  --no-cache                      \
-  --                              \
-  cache-s3=0.1.5-r0               \
-  curl=7.64.0-r1                  \
-  ghc=8.6.5-r0                    \
-  git=2.20.1-r0                   \
-  ncurses-dev=6.1_p20190105-r0    \
-  ncurses-static=6.1_p20190105-r0 \
-  make=4.2.1-r2                   \
-  musl-dev=1.1.20-r4              \
-  stack=1.9.3-r0                  \
-  xz=5.2.4-r0                     \
-  zlib-dev=1.2.11-r1
+RUN apk add      \
+  --no-cache     \
+  --             \
+  cache-s3       \
+  curl           \
+  ghc            \
+  git            \
+  ncurses-dev    \
+  ncurses-static \
+  make           \
+  musl-dev       \
+  stack          \
+  xz             \
+  zlib-dev
 
 # Setup build directory
 RUN mkdir -p -m 0700 /opt/build
