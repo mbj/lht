@@ -46,5 +46,5 @@ createIfMissing rootCertFile = do
 
 #ifndef __HLINT__
 rootCertificate :: Text
-rootCertificate = $$(readFile $ Path.file "aws/rds-ca-2019-root.pem")
+rootCertificate = $$(readFile $ Path.file "aws/rds-combined-ca-bundle.pem")
 #endif

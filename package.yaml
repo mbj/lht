@@ -8,7 +8,7 @@ copyright:   2019 Markus Schirp
 github:      mbj/lht
 
 extra-source-files:
-- aws/rds-ca-2019-root.pem
+- aws/rds-combined-ca-bundle.pem
 
 flags:
   static:
